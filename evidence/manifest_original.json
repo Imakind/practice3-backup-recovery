@@ -1,0 +1,24 @@
+{
+  "created": "20261028_083702_761222",
+  "source": "company_data",
+  "archive_sha256": "b4573cb2fca00bce7058ac8a24f5067d6a4f95904a3e6502a4e58b45e3257c3a",
+  "source_bytes": 45737,
+  "archive_bytes": 12336,
+  "files": {
+    "buh/report_1.csv": "f0c8f139d1cbfdad7e86176d040f85f96ccbab6f175adcafe02838429b1842f8",
+    "buh/report_2.csv": "e40b067deeab6a765c1bc3d542157051729b00d54531db068a51d3bb2680a177",
+    "buh/report_3.csv": "1434833ade6efe30e95f9b742f96485cc7fb33beb8367d56d6ccdb09536c1155",
+    "buh/report_4.csv": "ea7f374ef693276024670deb3314abb5bcb7475438d77dd1e30c0664fb7bb13a",
+    "buh/report_5.csv": "ec5bf99f4803f85deaffe4985f55c2da5b055194f28eee28130f96455dc5c4e5",
+    "hr/report_1.csv": "f6f7ce90375c7685e31fefaa2ad98dd1fcf3268139f5fb2fe6f55544c99c7f93",
+    "hr/report_2.csv": "ae0a3aa92ff5ae58b811a8a7cc5162334178e09f0efa44e9c8b6625d51779286",
+    "hr/report_3.csv": "b07499ad8c5b447e48a5a523c92368f18a94c8ea7137d128558e2c7765df86a3",
+    "hr/report_4.csv": "d4ecd3786c315bd05c302f883291a2fbe76c8ef2d341cf2c47e663a2d8ba602b",
+    "hr/report_5.csv": "c7bdba5fc07a72b9408baf965492cf22aba81d58513d9f7ec993239a8aa81187",
+    "sales/report_1.csv": "598d838518548a9bb9a2a20570010c8ca8e19ba9327d62a204055c0000a15653",
+    "sales/report_2.csv": "2f6eee7252fc972a2e50e00a795c70f890b70b68ccd04f102ce6a851b0fa60bd",
+    "sales/report_3.csv": "8accd88eb6f6023d51aa5e38a589ab8075553a50a3dbf3433edb58016f2a3b3c",
+    "sales/report_4.csv": "9faac6bcab4edfaa34ec553234b1091d44d50c89536cf6cb0406ccd79ea19320",
+    "sales/report_5.csv": "2b6768506b2f2ca308afc4cd5d22b9d71e3b6a3f4a3be5542c9cf8674d75ec27"
+  }
+}

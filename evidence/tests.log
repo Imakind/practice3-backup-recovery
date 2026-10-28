@@ -1,0 +1,15 @@
+test_corrupt_archive_does_not_replace_source (test_backup.BackupTests.test_corrupt_archive_does_not_replace_source) ... ok
+test_good_backup_and_restore (test_backup.BackupTests.test_good_backup_and_restore) ... ok
+test_invalid_rotation_count_does_not_delete_backups (test_backup.BackupTests.test_invalid_rotation_count_does_not_delete_backups) ... ok
+test_missing_extra_changed_all_reported (test_backup.BackupTests.test_missing_extra_changed_all_reported) ... ok
+test_missing_manifest_fails_without_replacing_source (test_backup.BackupTests.test_missing_manifest_fails_without_replacing_source) ... ok
+test_multiple_fast_backups_do_not_overwrite (test_backup.BackupTests.test_multiple_fast_backups_do_not_overwrite) ... ok
+test_rotation_keeps_five_pairs_and_identical_file_hashes (test_backup.BackupTests.test_rotation_keeps_five_pairs_and_identical_file_hashes) ... ok
+test_symlink_source_file_is_rejected (test_backup.BackupTests.test_symlink_source_file_is_rejected) ... ok
+test_tampered_manifest_detects_changed_and_extra (test_backup.BackupTests.test_tampered_manifest_detects_changed_and_extra) ... ok
+test_unsafe_archive_is_rejected_even_with_matching_hash (test_backup.BackupTests.test_unsafe_archive_is_rejected_even_with_matching_hash) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.047s
+
+OK

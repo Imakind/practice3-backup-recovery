@@ -1,0 +1,39 @@
+{
+  "capture_date_utc": "2026-10-28",
+  "source": "evidence/execution.log",
+  "source_sha256": "924cf01878137660451cee16e0f6e489d886f926dfd25406295bc754367998bf",
+  "source_lines": 126,
+  "method": "Actual native Xfce Terminal window screenshots captured with cua_repl.getScreenshot(). The terminal displayed read-only excerpts of the saved real execution log; these are not screenshots of the original execution in progress.",
+  "caption_ru": "Просмотр сохранённого журнала реального запуска в облачном терминале.",
+  "display_notes": "The shell prompt was shortened to backup_practice$ for legibility. Terminal font was increased through its View menu. No pixels were drawn, synthesized, or edited. No destructive test was rerun for capture.",
+  "files": [
+    {
+      "file": "01_environment_first_backup.png",
+      "command": "sed -n '1,18p' evidence/execution.log",
+      "width": 1177,
+      "height": 808,
+      "sha256": "7b3dad17fa32177ea882432a9e65d65bba4d64b150de8c3017cfb78130ae0532"
+    },
+    {
+      "file": "02_eight_runs_rotation.png",
+      "command": "grep -E '/8 ===|COUNT|ROTATE|5 JSON|SIZE|RATIO' evidence/execution.log",
+      "width": 1177,
+      "height": 808,
+      "sha256": "3aa2e7a2b69c8c9a54514eccc26c1c990c469b571668d2066c469354f05f1b56"
+    },
+    {
+      "file": "03_integrity_failures_detected.png",
+      "command": "sed -n '92,107p' evidence/execution.log",
+      "width": 1177,
+      "height": 808,
+      "sha256": "2902e019dcc0419139f1c3d9af6b4561c3d6753417943ad54cd1bcc20cac30d4"
+    },
+    {
+      "file": "04_restore_buh_and_timing.png",
+      "command": "sed -n '109,126p' evidence/execution.log",
+      "width": 1177,
+      "height": 808,
+      "sha256": "c3f0e47e3b8fb211d8703b300b7eaed41751a03575d66535a26a074e50690c7c"
+    }
+  ]
+}

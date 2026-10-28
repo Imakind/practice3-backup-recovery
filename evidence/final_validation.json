@@ -1,0 +1,50 @@
+{
+  "verified_archives": [
+    {
+      "archive": "backup_20261028_083654_409324.tar.gz",
+      "sha256_matches": true,
+      "source_file_hashes_match": 15
+    },
+    {
+      "archive": "backup_20261028_083656_501970.tar.gz",
+      "sha256_matches": true,
+      "source_file_hashes_match": 15
+    },
+    {
+      "archive": "backup_20261028_083658_574488.tar.gz",
+      "sha256_matches": true,
+      "source_file_hashes_match": 15
+    },
+    {
+      "archive": "backup_20261028_083700_669000.tar.gz",
+      "sha256_matches": true,
+      "source_file_hashes_match": 15
+    },
+    {
+      "archive": "backup_20261028_083702_761222.tar.gz",
+      "sha256_matches": true,
+      "source_file_hashes_match": 15
+    }
+  ],
+  "source_code_sha256": {
+    "practice1/make_test_data.py": "80604e975224da82fed4b94ad405a8705d495b0c129dc309d9bd385ac50fdb24",
+    "practice1/backup.py": "4e969ea96bcc1494a0f1d8ae0edaaf32b41bf2bd2df358887c1ef2329e182d73",
+    "practice1/test_backup.py": "a88749cd980b5d2df111545937a4a191e851af3da8b06b1362caa09753f82c92",
+    "run_demo.py": "3b8ceb428fa9cbb88775fa9c31528f6dabd055fb9dd4c2c2aa19d102c2626e56"
+  },
+  "unit_tests": 10,
+  "unit_tests_passed": 10,
+  "compileall": "passed",
+  "gitignore_checked": true,
+  "github_published": false,
+  "fresh_zip_reproduction": {
+    "unit_tests_passed": 10,
+    "full_demo_passed": true,
+    "backup_runs": 8,
+    "archives_remaining": 5,
+    "source_files": 15,
+    "source_bytes": 45737,
+    "restored_matches_manifest": true,
+    "note": "Separate fresh extraction; report measurements remain the original execution.log/evidence.json."
+  }
+}

@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+company_data/
+backups/
+restore_test/
+.restore_*/
+experiments/
+*.part

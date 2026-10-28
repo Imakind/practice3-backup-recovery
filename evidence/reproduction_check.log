@@ -1,0 +1,144 @@
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest discover -s practice1 -p test_*.py -v
+test_corrupt_archive_does_not_replace_source (test_backup.BackupTests.test_corrupt_archive_does_not_replace_source) ... ok
+test_good_backup_and_restore (test_backup.BackupTests.test_good_backup_and_restore) ... ok
+test_invalid_rotation_count_does_not_delete_backups (test_backup.BackupTests.test_invalid_rotation_count_does_not_delete_backups) ... ok
+test_missing_extra_changed_all_reported (test_backup.BackupTests.test_missing_extra_changed_all_reported) ... ok
+test_missing_manifest_fails_without_replacing_source (test_backup.BackupTests.test_missing_manifest_fails_without_replacing_source) ... ok
+test_multiple_fast_backups_do_not_overwrite (test_backup.BackupTests.test_multiple_fast_backups_do_not_overwrite) ... ok
+test_rotation_keeps_five_pairs_and_identical_file_hashes (test_backup.BackupTests.test_rotation_keeps_five_pairs_and_identical_file_hashes) ... ok
+test_symlink_source_file_is_rejected (test_backup.BackupTests.test_symlink_source_file_is_rejected) ... ok
+test_tampered_manifest_detects_changed_and_extra (test_backup.BackupTests.test_tampered_manifest_detects_changed_and_extra) ... ok
+test_unsafe_archive_is_rejected_even_with_matching_hash (test_backup.BackupTests.test_unsafe_archive_is_rejected_even_with_matching_hash) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.038s
+
+OK
+
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 -u run_demo.py
+=== РЕАЛЬНЫЙ УЧЕБНЫЙ ЗАПУСК. ВАРИАНТ 1 ===
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 --version
+Python 3.12.14
+UTC: 2026-10-28T08:42:33.993292+00:00
+OS: Linux-6.18.55-x86_64-with-glibc2.41
+CWD: /tmp/backup_zip_check_ytg0napm/practice3_variant1
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/make_test_data.py
+[OK] company_data: 3 отдела, 15 CSV-файлов, по 200 строк (всего 3000)
+[DATA] 15 файлов, 3000 строк, 45737 байт
+
+=== КОПИЯ 1/8 ===
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/backup.py
+[OK] Создан backup_20261028_084234_100093.tar.gz: 15 файлов, 12338 байт
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+[COUNT] Архивов после запуска: 1
+
+=== КОПИЯ 2/8 ===
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/backup.py
+[OK] Создан backup_20261028_084236_211274.tar.gz: 15 файлов, 12338 байт
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+[COUNT] Архивов после запуска: 2
+
+=== КОПИЯ 3/8 ===
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/backup.py
+[OK] Создан backup_20261028_084238_297573.tar.gz: 15 файлов, 12338 байт
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+[COUNT] Архивов после запуска: 3
+
+=== КОПИЯ 4/8 ===
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/backup.py
+[OK] Создан backup_20261028_084240_376267.tar.gz: 15 файлов, 12338 байт
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+[COUNT] Архивов после запуска: 4
+
+=== КОПИЯ 5/8 ===
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/backup.py
+[OK] Создан backup_20261028_084242_433219.tar.gz: 15 файлов, 12338 байт
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+[COUNT] Архивов после запуска: 5
+
+=== КОПИЯ 6/8 ===
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/backup.py
+[OK] Создан backup_20261028_084244_504183.tar.gz: 15 файлов, 12338 байт
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+[ROTATE] Удалены backup_20261028_084234_100093.tar.gz и его JSON
+[COUNT] Архивов после запуска: 5
+
+=== КОПИЯ 7/8 ===
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/backup.py
+[OK] Создан backup_20261028_084246_589747.tar.gz: 15 файлов, 12338 байт
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+[ROTATE] Удалены backup_20261028_084236_211274.tar.gz и его JSON
+[COUNT] Архивов после запуска: 5
+
+=== КОПИЯ 8/8 ===
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/backup.py
+[OK] Создан backup_20261028_084248_679909.tar.gz: 15 файлов, 12338 байт
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+[ROTATE] Удалены backup_20261028_084238_297573.tar.gz и его JSON
+[COUNT] Архивов после запуска: 5
+
+=== РОТАЦИЯ И СЖАТИЕ ===
+[OK] После 8 запусков осталось 5 архивов и 5 JSON; 3 старые пары удалены.
+[OK] Хеши всех 15 файлов совпадают во всех пяти сохранённых копиях.
+[SIZE] Исходные файлы: 45737 байт; последний архив: 12338 байт
+[RATIO] 45737 / 12338 = 3.7070 раза
+
+=== ЗАДАНИЕ 3: ИЗМЕНЁННЫЙ ХЕШ И УДАЛЁННАЯ ЗАПИСЬ JSON ===
+  missing / Отсутствуют (0): нет
+  extra / Лишние (1): buh/report_2.csv
+  changed / Изменены (1): buh/report_1.csv
+[FAIL] Восстановленные файлы не совпадают с манифестом
+[OK] Исправный исходный JSON возвращён; последняя копия не потеряна.
+
+=== ДОПОЛНИТЕЛЬНО: ПРОВЕРКА MISSING ===
+  missing / Отсутствуют (1): buh/missing_demo.csv
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+
+=== ЗАДАНИЕ 3: ПОВРЕЖДЕНИЕ КОПИИ АРХИВА ===
+[FAIL] Архив повреждён: контрольная сумма SHA-256 не совпадает
+[OK] restore() отклонила повреждённый архив: Архив повреждён: контрольная сумма SHA-256 не совпадает
+[OK] При отказе restore() исходные 15 файлов остались неизменными.
+
+=== ЗАДАНИЕ 4: УДАЛЕНИЕ BUH И ВОССТАНОВЛЕНИЕ ===
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+[INCIDENT] Удалена company_data/buh; осталось файлов: 10
+  missing / Отсутствуют (5): buh/report_1.csv, buh/report_2.csv, buh/report_3.csv, buh/report_4.csv, buh/report_5.csv
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] company_data восстановлена: 15 файлов; 0.004993 с
+[OK] buh вернулась: 5 файлов. Всего 15 файлов; SHA-256 каждого совпал с JSON.
+$ /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3 practice1/backup.py verify /tmp/backup_zip_check_ytg0napm/practice3_variant1/practice1/backups/backup_20261028_084248_679909.tar.gz
+  missing / Отсутствуют (0): нет
+  extra / Лишние (0): нет
+  changed / Изменены (0): нет
+[OK] Восстановление проверено: 15 файлов совпадают
+
+[COMPLETE] Все проверки демонстрации выполнены; evidence/evidence.json записан.

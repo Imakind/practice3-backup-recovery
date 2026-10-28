@@ -1,0 +1,101 @@
+{
+  "started_utc": "2026-10-28T08:36:48.048242+00:00",
+  "finished_utc": "2026-10-28T08:37:02.904091+00:00",
+  "python": "3.12.14",
+  "os": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "student": "Акишев Ақжан Бақытжанұлы",
+  "variant": 1,
+  "source_files": 15,
+  "rows_per_file": 200,
+  "total_rows": 3000,
+  "source_bytes": 45737,
+  "latest_archive_bytes": 12336,
+  "compression_ratio": 3.7076037613488975,
+  "space_saved_percent": 73.02840151299823,
+  "backup_runs": [
+    {
+      "run": 1,
+      "archive": "backup_20261028_083648_165193.tar.gz",
+      "remaining": 1
+    },
+    {
+      "run": 2,
+      "archive": "backup_20261028_083650_258479.tar.gz",
+      "remaining": 2
+    },
+    {
+      "run": 3,
+      "archive": "backup_20261028_083652_334890.tar.gz",
+      "remaining": 3
+    },
+    {
+      "run": 4,
+      "archive": "backup_20261028_083654_409324.tar.gz",
+      "remaining": 4
+    },
+    {
+      "run": 5,
+      "archive": "backup_20261028_083656_501970.tar.gz",
+      "remaining": 5
+    },
+    {
+      "run": 6,
+      "archive": "backup_20261028_083658_574488.tar.gz",
+      "remaining": 5
+    },
+    {
+      "run": 7,
+      "archive": "backup_20261028_083700_669000.tar.gz",
+      "remaining": 5
+    },
+    {
+      "run": 8,
+      "archive": "backup_20261028_083702_761222.tar.gz",
+      "remaining": 5
+    }
+  ],
+  "interval_seconds": 2,
+  "keep_last": 5,
+  "archives_remaining": 5,
+  "json_remaining": 5,
+  "deleted_old_pairs": 3,
+  "latest_archive": "backup_20261028_083702_761222.tar.gz",
+  "latest_archive_sha256": "b4573cb2fca00bce7058ac8a24f5067d6a4f95904a3e6502a4e58b45e3257c3a",
+  "same_file_hashes_all_retained_backups": true,
+  "tampered_manifest_differences": {
+    "missing": [],
+    "extra": [
+      "buh/report_2.csv"
+    ],
+    "changed": [
+      "buh/report_1.csv"
+    ]
+  },
+  "missing_demo_differences": {
+    "missing": [
+      "buh/missing_demo.csv"
+    ],
+    "extra": [],
+    "changed": []
+  },
+  "corrupt_archive_detected": true,
+  "corrupt_restore_source_unchanged": true,
+  "corrupted_archive_sha256": "01a1044ed8c29c9cdfc01181b012278453a1d560ed5b710c84e6bdc6b3242f73",
+  "incident_missing_files": [
+    "buh/report_1.csv",
+    "buh/report_2.csv",
+    "buh/report_3.csv",
+    "buh/report_4.csv",
+    "buh/report_5.csv"
+  ],
+  "restore_seconds": 0.009869270999843138,
+  "restored_buh_files": 5,
+  "restored_files": 15,
+  "restored_matches_manifest": true,
+  "rpo_hours": 24,
+  "required_rpo_hours": 1,
+  "restore_transfer_seconds": 2048.0,
+  "preparation_seconds": 1800,
+  "calculated_rto_seconds": 3848.0,
+  "required_rto_seconds": 7200
+}
